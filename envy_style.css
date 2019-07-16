@@ -1,0 +1,200 @@
+body {
+    background-color: #000;
+    color: #fff;
+    font-weight: bold;
+}
+
+h2 {
+    text-align: center;
+}
+
+#site {
+    width: 100%;
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button, select {
+    background-color: #006400;
+    border: none;
+    border-radius: 2px;
+    margin: 4px 1px 4px 1px;
+}
+button {
+    padding: 5px 20px 5px 20px;
+}
+
+select {
+    padding: 4px 10px 4px 10px;
+}
+
+#delete_number {
+    width: 200px;
+}
+
+button:hover, select:hover {
+    cursor: pointer;
+}
+
+#clockh, #clockm {
+    display: none;
+    position: fixed;
+    margin: 5% auto;
+    top: 10px;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background-color: #006400;
+    height: 240px;
+    width: 240px;
+    border-radius: 120px;
+}
+
+#clockh button, #clockm button {
+    background-color: #bbb;
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    font-weight: bold;
+    display: block;
+    position: absolute;
+}
+
+button:nth-child(1) {
+	top: 4px;
+	left: 105px;
+}
+
+button:nth-child(2) {
+	top: 18px;
+	left: 156px;
+}
+
+button:nth-child(3) {
+	top: 54px;
+	left: 192px;
+}
+
+button:nth-child(4) {
+	top: 105px;
+	left: 206px;
+}
+
+button:nth-child(5) {
+	top: 155px;
+	left: 192px;
+}
+
+button:nth-child(6) {
+	top: 192px;
+	left: 156px;
+}
+
+button:nth-child(7) {
+	top: 206px;
+	left: 105px;
+}
+
+button:nth-child(8) {
+	top: 192px;
+	left: 55px;
+}
+
+button:nth-child(9) {
+	top: 156px;
+	left: 18px;
+}
+
+button:nth-child(10) {
+	top: 105px;
+	left: 4px;
+}
+
+button:nth-child(11) {
+	top: 54px;
+	left: 18px;
+}
+
+button:nth-child(12) {
+	top: 18px;
+	left: 54px;
+}
+
+button:nth-child(13) {
+	top: 38px;
+	left: 105px;
+}
+
+button:nth-child(14) {
+	top: 47px;
+	left: 138px;
+}
+
+button:nth-child(15) {
+	top: 72px;
+	left: 163px;
+}
+
+button:nth-child(16) {
+	top: 105px;
+	left: 172px;
+}
+
+button:nth-child(17) {
+	top: 138px;
+	left: 163px;
+}
+
+button:nth-child(18) {
+	top: 163px;
+	left: 138px;
+}
+
+button:nth-child(19) {
+	top: 172px;
+	left: 105px;
+}
+
+button:nth-child(20) {
+	top: 163px;
+	left: 72px;
+}
+
+button:nth-child(21) {
+	top: 139px;
+	left: 47px;
+}
+
+button:nth-child(22) {
+	top: 105px;
+	left: 38px;
+}
+
+button:nth-child(23) {
+	top: 72px;
+	left: 47px;
+}
+
+button:nth-child(24) {
+	top: 47px;
+	left: 71px;
+}
+
+#ympd {
+    margin: 0 auto 0 auto;
+    display: block;
+    width: 100%;
+    max-width: 1080px;
+    height: 1080px;
+}
+
+#div1 {width:350px;height:70px;padding:10px;border:1px solid #aaaaaa;}
+
+#songlist {
+    font-size: 80%;
+}

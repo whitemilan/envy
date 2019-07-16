@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Envy</title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="mobile-web-app-capable" content="yes">
+      <link rel="icon" type="image/png" href="homunculus-logo-trans.png">
+      <link rel="stylesheet" type="text/css" href="envy_style.css">
+   </head>
+   <body>
+   <div id='site'>
+      <h2>Envy</h2>
+      <button id='button_toggle' onclick='sendCommand("toggle");' style='width:
+	      80px;'>Play/Pause</button>
+      <button onclick='sendCommand("stop");'>Stop</button>
+      <button onclick='sendCommand("prev");'>Prev</button>
+      <button onclick='sendCommand("next");'>Next</button>
+      <br>
+      <button onclick='sendCommand("vol_down");'>Vol down</button>
+      <button onclick='sendCommand("vol_up");'>Vol up</button>
+      <button onclick='sendCommand("power");'>Power</button>
+      <button onclick='sendCommand("source_up");'>Source Up</button>
+      <button onclick='sendCommand("source_down");'>Source Down</button>
+      <br>
+      <button onclick='sendCommand("shuffle");'>Shuffle</button>
+      <button onclick='sendCommand("clear");'>Clear</button>
+      <button onclick='deleteSongs();'>Delete</button>
+      <button onclick='sendCommand("update");'>Update</button>
+      <br>
+      <select id="list_of_playlists">
+      </select>
+      <button onclick='sendLoadPlaylist();'>Load Playlist</button>
+      <button onclick='sendDeletePlaylist();'>Delete Playlist</button>
+      <!--  <form action='javascript:void(0);'> -->
+      <input type='text' id='newPlaylistName' value='bla' >
+      <button onclick='savePlaylist();'>Save Playlist</button>
+      <!-- </form> -->
+
+      <br>
+      <!-- <button onclick='sendTimer(5);'>Snooze</button> -->
+      <button onclick='displayClock();'>Set Alarm</button>
+      <br>
+      <select id="delete_number">
+      </select>
+      <button onclick='sendDelete_Alarm();'>Delete alarm</button>
+      <br>
+      <!-- <br><br>
+      <div id="div_msg"> </div>
+      <div id="div_msg2">Test </div>
+      <div id="div_out">Output</div>
+      <div id="div_out2">Output</div> -->
+      <div id="clockh">
+	      <button onclick='collectHours(0);'>0</button>
+	      <button onclick='collectHours(1);'>1</button>
+	      <button onclick='collectHours(2);'>2</button>
+	      <button onclick='collectHours(3);'>3</button>
+	      <button onclick='collectHours(4);'>4</button>
+	      <button onclick='collectHours(5);'>5</button>
+	      <button onclick='collectHours(6);'>6</button>
+	      <button onclick='collectHours(7);'>7</button>
+	      <button onclick='collectHours(8);'>8</button>
+	      <button onclick='collectHours(9);'>9</button>
+	      <button onclick='collectHours(10);'>10</button>
+	      <button onclick='collectHours(11);'>11</button>
+	      <button onclick='collectHours(12);'>12</button>
+	      <button onclick='collectHours(13);'>13</button>
+	      <button onclick='collectHours(14);'>14</button>
+	      <button onclick='collectHours(15);'>15</button>
+	      <button onclick='collectHours(16);'>16</button>
+	      <button onclick='collectHours(17);'>17</button>
+	      <button onclick='collectHours(18);'>18</button>
+	      <button onclick='collectHours(19);'>19</button>
+	      <button onclick='collectHours(20);'>20</button>
+	      <button onclick='collectHours(21);'>21</button>
+	      <button onclick='collectHours(22);'>22</button>
+	      <button onclick='collectHours(23);'>23</button>
+      </div>
+      <div id="clockm">
+	      <button onclick='sendAlarm(0);'>0</button>
+	      <button onclick='sendAlarm(5);'>5</button>
+	      <button onclick='sendAlarm(10);'>10</button>
+	      <button onclick='sendAlarm(15);'>15</button>
+	      <button onclick='sendAlarm(20);'>20</button>
+	      <button onclick='sendAlarm(25);'>25</button>
+	      <button onclick='sendAlarm(30);'>30</button>
+	      <button onclick='sendAlarm(35);'>35</button>
+       	      <button onclick='sendAlarm(40);'>40</button>
+	      <button onclick='sendAlarm(45);'>45</button>
+	      <button onclick='sendAlarm(50);'>50</button>
+	      <button onclick='sendAlarm(55);'>55</button>
+      </div>
+      <div style="width: 50%; display: inline-block">
+     <ol id="songlist"><li onclick="selectSong(this)" ondblclick="test()" draggable="true" ondrop="drop(event, 
+          this)" ondragover="allowDrop(event, this)" data-value="song1">Song 1
+         </li><li onclick="selectSong(this)" draggable="true" ondrop="drop(event,
+          this)" ondragover="allowDrop(event, this)" data-value="song2">Song 2
+         </li><li onclick="selectSong(this)" draggable="true" ondrop="drop(event,
+          this)" ondragover="allowDrop(event, this)" data-value="song3">Song 3
+         </li><li onclick="selectSong(this)" draggable="true" ondrop="drop(event,
+          this)" ondragover="allowDrop(event, this)" data-value="song4">Song 4
+         </li><li onclick="selectSong(this)" draggable="true" ondrop="drop(event,
+          this)" ondragover="allowDrop(event, this)" data-value="song5">Song 5
+         </li><li onclick="selectSong(this)" draggable="true" ondrop="drop(event,
+          this)" ondragover="allowDrop(event, this)" data-value="song6">Song 6
+         </li></ol>
+	</div>
+	<div style="width: 49%; display: inline-block; vertical-align: top">
+		<ol id="directorystructure">
+			<li>directory</li>
+			<li>structure</li>
+		</ol>
+	</div>
+   </div>
+   <!-- <iframe id="ympd" src="http://192.168.2.117:8080"></iframe> -->
+      <script src="envy.js"></script>
+   </body>
+</html>
